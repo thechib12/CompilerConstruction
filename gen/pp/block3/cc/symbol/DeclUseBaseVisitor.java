@@ -1,6 +1,5 @@
 // Generated from D:/UTwente/Module 8/AntlrTest/src/main/java/pp/block3/cc/symbol\DeclUse.g4 by ANTLR 4.5.1
 package pp.block3.cc.symbol;
-package pp.block3.cc.symbol;
 import org.antlr.v4.runtime.tree.AbstractParseTreeVisitor;
 
 /**

@@ -18,35 +18,101 @@ public interface ArithmeticListener extends ParseTreeListener {
 	 */
 	void exitGoal(ArithmeticParser.GoalContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link ArithmeticParser#expr}.
+	 * Enter a parse tree produced by the {@code minusrule}
+	 * labeled alternative in {@link ArithmeticParser#expr}.
 	 * @param ctx the parse tree
 	 */
-	void enterExpr(ArithmeticParser.ExprContext ctx);
+	void enterMinusrule(ArithmeticParser.MinusruleContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link ArithmeticParser#expr}.
+	 * Exit a parse tree produced by the {@code minusrule}
+	 * labeled alternative in {@link ArithmeticParser#expr}.
 	 * @param ctx the parse tree
 	 */
-	void exitExpr(ArithmeticParser.ExprContext ctx);
+	void exitMinusrule(ArithmeticParser.MinusruleContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link ArithmeticParser#term}.
+	 * Enter a parse tree produced by the {@code plusrule}
+	 * labeled alternative in {@link ArithmeticParser#expr}.
 	 * @param ctx the parse tree
 	 */
-	void enterTerm(ArithmeticParser.TermContext ctx);
+	void enterPlusrule(ArithmeticParser.PlusruleContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link ArithmeticParser#term}.
+	 * Exit a parse tree produced by the {@code plusrule}
+	 * labeled alternative in {@link ArithmeticParser#expr}.
 	 * @param ctx the parse tree
 	 */
-	void exitTerm(ArithmeticParser.TermContext ctx);
+	void exitPlusrule(ArithmeticParser.PlusruleContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link ArithmeticParser#exponent}.
+	 * Enter a parse tree produced by the {@code singleruleexpr}
+	 * labeled alternative in {@link ArithmeticParser#expr}.
 	 * @param ctx the parse tree
 	 */
-	void enterExponent(ArithmeticParser.ExponentContext ctx);
+	void enterSingleruleexpr(ArithmeticParser.SingleruleexprContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link ArithmeticParser#exponent}.
+	 * Exit a parse tree produced by the {@code singleruleexpr}
+	 * labeled alternative in {@link ArithmeticParser#expr}.
 	 * @param ctx the parse tree
 	 */
-	void exitExponent(ArithmeticParser.ExponentContext ctx);
+	void exitSingleruleexpr(ArithmeticParser.SingleruleexprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code dividerule}
+	 * labeled alternative in {@link ArithmeticParser#term}.
+	 * @param ctx the parse tree
+	 */
+	void enterDividerule(ArithmeticParser.DivideruleContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code dividerule}
+	 * labeled alternative in {@link ArithmeticParser#term}.
+	 * @param ctx the parse tree
+	 */
+	void exitDividerule(ArithmeticParser.DivideruleContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code singleruleterm}
+	 * labeled alternative in {@link ArithmeticParser#term}.
+	 * @param ctx the parse tree
+	 */
+	void enterSingleruleterm(ArithmeticParser.SingleruletermContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code singleruleterm}
+	 * labeled alternative in {@link ArithmeticParser#term}.
+	 * @param ctx the parse tree
+	 */
+	void exitSingleruleterm(ArithmeticParser.SingleruletermContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code multiplyrule}
+	 * labeled alternative in {@link ArithmeticParser#term}.
+	 * @param ctx the parse tree
+	 */
+	void enterMultiplyrule(ArithmeticParser.MultiplyruleContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code multiplyrule}
+	 * labeled alternative in {@link ArithmeticParser#term}.
+	 * @param ctx the parse tree
+	 */
+	void exitMultiplyrule(ArithmeticParser.MultiplyruleContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code powerrule}
+	 * labeled alternative in {@link ArithmeticParser#exponent}.
+	 * @param ctx the parse tree
+	 */
+	void enterPowerrule(ArithmeticParser.PowerruleContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code powerrule}
+	 * labeled alternative in {@link ArithmeticParser#exponent}.
+	 * @param ctx the parse tree
+	 */
+	void exitPowerrule(ArithmeticParser.PowerruleContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code singleruleexponent}
+	 * labeled alternative in {@link ArithmeticParser#exponent}.
+	 * @param ctx the parse tree
+	 */
+	void enterSingleruleexponent(ArithmeticParser.SingleruleexponentContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code singleruleexponent}
+	 * labeled alternative in {@link ArithmeticParser#exponent}.
+	 * @param ctx the parse tree
+	 */
+	void exitSingleruleexponent(ArithmeticParser.SingleruleexponentContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link ArithmeticParser#factor}.
 	 * @param ctx the parse tree

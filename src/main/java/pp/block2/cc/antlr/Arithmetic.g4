@@ -2,17 +2,19 @@ grammar Arithmetic;
 
 goal : expr;
 
-expr :  expr '+' term
-       | expr '-' term
-       | term;
+expr :  expr '+' term # plusrule
+       | expr '-' term # minusrule
+       | term # singleruleexpr
+        ;
 
+term : term '*' exponent # multiplyrule
+     | term '/' exponent # dividerule
+     | exponent # singleruleterm
+     ;
 
-term : term '*' exponent
-     | term '/' exponent
-     | exponent;
-
-exponent : <assoc=right > factor '^' exponent
-     | factor;
+exponent : <assoc=right > factor '^' exponent # powerrule
+     | factor # singleruleexponent
+     ;
 
 
 factor : '(' expr ')'

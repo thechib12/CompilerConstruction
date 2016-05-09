@@ -8,7 +8,7 @@ subject: modifier subject  #modSubject | NOUN #SimpleSubject;
 /** Grammatical object in a sentence. */
 object: modifier object | NOUN;
 /** Modifier in an object or subject. */
-modifier : <assoc= right > modifier ',' modifier
+modifier :  <assoc = left> modifier ',' modifier
 | ADJECTIVE
 ;
 

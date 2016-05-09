@@ -23,14 +23,14 @@ public class MyCalculatorTester {
     public void testExpression() {
         this.lexerType = ArithmeticLexer.class;
         calculator = new MyCalculator();
-//        correct("(3+5)-4", new BigInteger("4"));
-//        correct("3^2", new BigInteger("9"));
-//        correct("0", new BigInteger("0"));
+        correct("(3+5)-4", new BigInteger("4"));
+        correct("3^2", new BigInteger("9"));
+        correct("0", new BigInteger("0"));
         correct("3^1^5^0", new BigInteger("3"));
-//        correct("(5/5)", new BigInteger("1"));
-//
-//        correct("3*2^2", new BigInteger("12"));
-//        correct("(3+5)*5*(3-2)^2*20/4", new BigInteger("200"));
+        correct("(5/5)", new BigInteger("1"));
+
+        correct("3*2^2", new BigInteger("12"));
+        correct("(3+5)*5*(3-2)^2*20/4", new BigInteger("200"));
     }
 
 

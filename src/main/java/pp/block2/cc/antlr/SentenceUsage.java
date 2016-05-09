@@ -10,7 +10,7 @@ import org.antlr.v4.runtime.tree.ParseTree;
 public class SentenceUsage {
 	public static void main(String[] args) {
 		parse("all smart undergraduate students love all compilers.");
-//		parse("all students love love.");
+		parse("all students love love.");
 	}
 
 	public static void parse(String text) {
@@ -26,7 +26,7 @@ public class SentenceUsage {
 		ParseTree tree = parser.sentence();
 		// Print the (formatted) parse tree
 		System.out.println(tree.toStringTree(parser));
-		getChildren(tree, parser);
+//		getChildren(tree, parser);
 
 	}
 

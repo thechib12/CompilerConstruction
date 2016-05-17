@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e71f76bc-a0a2-4b3d-be0d-b29ac47014f8" name="Default" comment="Latex grammar gemaakt">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/block1/queue/QueueEmptyException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/block3/cc/tabular/HTMLWriter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/block3/cc/tabular/MyErrorListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/block3/cc/test/TabularTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/block3/cp/serverclient/ConLinkedQueue.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/block3/cp/serverclient/LeftRightDeadlock.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/block3/cp/serverclient/LeftRightTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/block3/cp/serverclient/TestQueue.java" />
+    <list default="true" id="e71f76bc-a0a2-4b3d-be0d-b29ac47014f8" name="Default" comment="block 3 gemaakt">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/block4/cc/ErrorListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/block4/cc/cfg/BottomUpCFGBuilder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/block4/cc/cfg/Fragment.g4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/block4/cc/cfg/FragmentBaseListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/block4/cc/cfg/FragmentLexer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/block4/cc/cfg/FragmentListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/block4/cc/cfg/FragmentParser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/block4/cc/cfg/Graph.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/block4/cc/cfg/Node.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/block4/cc/cfg/TopDownCFGBuilder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/block4/cc/iloc/Calc.g4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/block4/cc/iloc/CalcCompiler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/block4/cc/iloc/Samples.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/block4/cc/iloc/max.iloc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/block4/cc/test/CalcCompilerTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/block4/cc/test/FindTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pp/block3/cc/antlr/TypesAttr.g4" afterPath="$PROJECT_DIR$/src/main/java/pp/block3/cc/antlr/TypesAttr.g4" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pp/block3/cc/tabular/Latex.g4" afterPath="$PROJECT_DIR$/src/main/java/pp/block3/cc/tabular/Latex.g4" />
     </list>
     <ignored path="AntlrTest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,78 +50,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ErrorListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pp/block4/cc/ErrorListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Graph.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pp/block4/cc/cfg/Graph.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="21" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Node.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pp/block4/cc/cfg/Node.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="21" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FragmentBaseListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pp/block4/cc/cfg/FragmentBaseListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="211" column="36" selection-start-line="211" selection-start-column="31" selection-end-line="211" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Fragment.g4" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pp/block4/cc/cfg/Fragment.g4">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-88">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FragmentListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pp/block4/cc/cfg/FragmentListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FragmentParser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pp/block4/cc/cfg/FragmentParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -1072,7 +1006,7 @@
       <workItem from="1463044269277" duration="5309000" />
       <workItem from="1463471596688" duration="210000" />
       <workItem from="1463471827945" duration="203000" />
-      <workItem from="1463472052082" duration="426000" />
+      <workItem from="1463472052082" duration="482000" />
     </task>
     <task id="LOCAL-00001" summary="aanpassing van rogier">
       <created>1462780028486</created>
@@ -1095,7 +1029,14 @@
       <option name="project" value="LOCAL" />
       <updated>1462813157165</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="block 3 gemaakt">
+      <created>1463472499938</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1463472499938</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1131,7 +1072,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89303000" />
+    <option name="totallyTimeSpent" value="89359000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="-2" width="1932" height="1050" extended-state="0" />
@@ -1210,7 +1151,8 @@
     <MESSAGE value="aanpassing van rogier" />
     <MESSAGE value="test" />
     <MESSAGE value="Latex grammar gemaakt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Latex grammar gemaakt" />
+    <MESSAGE value="block 3 gemaakt" />
+    <option name="LAST_COMMIT_MESSAGE" value="block 3 gemaakt" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

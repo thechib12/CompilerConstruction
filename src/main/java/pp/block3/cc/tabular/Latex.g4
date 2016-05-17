@@ -1,22 +1,19 @@
 grammar Latex;
 
-
-table : BEGINTABLE arguments '\n' (rows)* ENDTABLE '\n';
+table : BEGINTABLE arguments NEWLINE (rows)* ENDTABLE NEWLINE;
 arguments : LBRACK OPTIONS RBRACK;
-rows :  ((|WORD) ('&' (|WORD))* '\\\\' '\n')+ ;
-
-OPTIONS: ('l' | 'c' | 'r')*;
+rows :  rowentry ('&' rowentry)* '\\\\' NEWLINE;
+rowentry : (|WORD);
 
 
 LBRACK : '{';
 RBRACK : '}';
-
+OPTIONS : ('l'|'c'|'r')+;
 BEGINTABLE : '\\begin{tabular}';
 ENDTABLE : '\\end{tabular}';
-
-KEYWORDS: ('\\' | '{' |'}' | '$' | '&' | '#' | 'ˆ' | '_' | '~̃'| '%');
-COMMENT : ('%'  ~('\r'|'\n')* ('\r'|'\n')) -> skip;
-WORD: (('a'..'z' | 'A' .. 'Z' | '0' .. '9')+) ;
+WORD : ~('\\' | '\n' | '{' |'}' | '$' | '&' | '#' | '^' | '_' | '~'| '%')+;
 
 
-WS : [ \t]+ -> skip;
+KEYWORDS: ('\\' | '{' |'}' | '$' | '&' | '#' | 'ˆ' | '_' | '~' | '%');
+NEWLINE : ('\r'|'\n')+;
+COMMENT : ('%'  ~('\r'|'\n')* ('\r'|'\n')+) -> skip;

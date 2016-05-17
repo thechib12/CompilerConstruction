@@ -4,15 +4,15 @@ import TypesVocab;
 
 @members {
 
-    private Type getType(String text){
-       if (text.equals("true") || text.equals("false")){
-            return Type.BOOL;
-       } else if (text.matches("-?\\d+(\\.\\d+)?")){
-            return Type.NUM;
-       } else {
-            return Type.STR;
-       }
-    }
+  private Type getType(String text){
+         if (text.equals("true") || text.equals("false")){
+              return Type.BOOL;
+         } else if (text.matches("-?\\d+(\\.\\d+)?")){
+              return Type.NUM;
+         } else {
+              return Type.STR;
+         }
+      }
 
     private Type getHat(Type type1,Type type2){
         if (type1 == Type.NUM && type2 == Type.NUM){

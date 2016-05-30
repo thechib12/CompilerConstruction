@@ -1,0 +1,17 @@
+T__0=1
+T__1=2
+LBRACK=3
+RBRACK=4
+OPTIONS=5
+BEGINTABLE=6
+ENDTABLE=7
+WORD=8
+KEYWORDS=9
+NEWLINE=10
+COMMENT=11
+'&'=1
+'\\\\'=2
+'{'=3
+'}'=4
+'\\begin{tabular}'=6
+'\\end{tabular}'=7

@@ -1,6 +1,5 @@
 grammar Fragment;
 
-@header{package pp.block4.cc.iloc.cfg;}
 
 program: stat+ EOF;
 

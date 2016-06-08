@@ -27,20 +27,6 @@ public class Simulator {
 	public static final int FALSE = 0;
 	/** Flag controlling debug mode. */
 	public static boolean DEBUG = false;
-
-	static public void main(String[] args) {
-		if (args.length == 0) {
-			System.err.println("Usage: filename.iloc");
-			return;
-		}
-		try {
-			Program prog = Assembler.instance().assemble(new File(args[0]));
-			new Simulator(prog).run();
-		} catch (FormatException | IOException exc) {
-			exc.printStackTrace();
-		}
-	}
-
 	/** The simulated program. */
 	private final Program prg;
 	/** The virtual machine on which the program is run. */
@@ -51,7 +37,6 @@ public class Simulator {
 	private Scanner in;
 	/** The print writer used for the out-operations. */
 	private PrintStream out;
-
 	/** Constructs a simulator for a given program and VM. */
 	public Simulator(Program program, Machine vm) {
 		assert program != null;
@@ -66,6 +51,19 @@ public class Simulator {
 	/** Constructs a simulator for a given program and a fresh VM. */
 	public Simulator(Program program) {
 		this(program, new Machine());
+	}
+
+	static public void main(String[] args) {
+		if (args.length == 0) {
+			System.err.println("Usage: filename.iloc");
+			return;
+		}
+		try {
+			Program prog = Assembler.instance().assemble(new File(args[0]));
+			new Simulator(prog).run();
+		} catch (FormatException | IOException exc) {
+			exc.printStackTrace();
+		}
 	}
 
 	/** Returns the program wrapped in this simulator. */
@@ -348,6 +346,7 @@ public class Simulator {
 
 	/** Pops a 4-byte integer from the stack. */
 	private int pop() {
+
 		int sp = this.vm.getReg(Machine.SP);
 		int result = this.vm.load(sp);
 		this.vm.setReg(Machine.SP, sp + 4);

@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e71f76bc-a0a2-4b3d-be0d-b29ac47014f8" name="Default" comment="block 5">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/block6/cp/FibRecursiveTask.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/block6/cp/FibTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/block6/cp/FibonacciCallable.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/block6/cp/MergeSortAction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pp/iloc/sample/fib.iloc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pp/block4/cc/cfg/TopDownCFGBuilder.class" afterPath="$PROJECT_DIR$/target/classes/pp/block4/cc/cfg/TopDownCFGBuilder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pp/block4/cc/iloc/CalcCompiler.class" afterPath="$PROJECT_DIR$/target/classes/pp/block4/cc/iloc/CalcCompiler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pp/block4/cc/iloc/FibTest.class" afterPath="$PROJECT_DIR$/target/classes/pp/block4/cc/iloc/FibTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pp/block4/cc/iloc/MaxTest.class" afterPath="$PROJECT_DIR$/target/classes/pp/block4/cc/iloc/MaxTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pp/block5/cp/LockFreeStack$Node.class" afterPath="$PROJECT_DIR$/target/classes/pp/block5/cp/LockFreeStack$Node.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pp/block5/cp/MyBarrier.class" afterPath="$PROJECT_DIR$/target/classes/pp/block5/cp/MyBarrier.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pp/s1594273/q1_2/DecimalTest.class" afterPath="$PROJECT_DIR$/target/classes/pp/s1594273/q1_2/DecimalTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pp/s1594273/q1_4/NumberTest.class" afterPath="$PROJECT_DIR$/target/classes/pp/s1594273/q1_4/NumberTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pp/s1594273/q1_5/EmoteChecker.class" afterPath="$PROJECT_DIR$/target/classes/pp/s1594273/q1_5/EmoteChecker.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pp/s1594273/q1_5/EmoteTest.class" afterPath="$PROJECT_DIR$/target/classes/pp/s1594273/q1_5/EmoteTest.class" />
+    <list default="true" id="e71f76bc-a0a2-4b3d-be0d-b29ac47014f8" name="Default" comment="fibonacci klaar">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AntlrTest.iws" />
@@ -67,7 +52,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/pp/block6/cp/FibTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="242">
-              <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1023,7 +1008,7 @@
       <workItem from="1464596152181" duration="11572000" />
       <workItem from="1464770756774" duration="3651000" />
       <workItem from="1464943515244" duration="3728000" />
-      <workItem from="1465380974281" duration="664000" />
+      <workItem from="1465380974281" duration="687000" />
     </task>
     <task id="LOCAL-00001" summary="aanpassing van rogier">
       <created>1462780028486</created>
@@ -1067,7 +1052,14 @@
       <option name="project" value="LOCAL" />
       <updated>1464613955775</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fibonacci klaar">
+      <created>1465381652640</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1465381652640</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1103,7 +1095,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="184524000" />
+    <option name="totallyTimeSpent" value="184547000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
@@ -1185,7 +1177,8 @@
     <MESSAGE value="block 3 gemaakt" />
     <MESSAGE value="block 4 gemaakt" />
     <MESSAGE value="block 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="block 5" />
+    <MESSAGE value="fibonacci klaar" />
+    <option name="LAST_COMMIT_MESSAGE" value="fibonacci klaar" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1501,7 +1494,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/pp/block6/cp/FibTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

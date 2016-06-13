@@ -1,4 +1,6 @@
-
+// start by getting the input and placing it in reg
+// place the return adress of end in the stack, and set the # of end if in a register,
+// so  it would not have to be loaded in every else statement
 start:  in "Number 1? " => r_1
         in "Number 2? " => r_2
         loadI 0         => r_count
@@ -7,31 +9,37 @@ start:  in "Number 1? " => r_1
         push r_return_end
         jumpI           -> gcd
 
+// if statement
 gcd:    cmp_EQ r_1, r_2 => r_cmp
         cbr r_cmp -> then, else
 
+// if r1 == r2, then you are nearly finished.
 then:   i2i r_1         => r_result
         addI r_count, 1 => r_count
         pop             => r_return
         jump            -> r_return
 
+// else check whether it is greater or not
 else:   cmp_GT r_1, r_2 => r_cmp
         cbr r_cmp       -> else1, else2
 
+// its greater, call it recursively with the right arguments
 else1:  sub r_1, r_2    => r_1
         push r_return_if
         jumpI           -> gcd
 
+// otherwise, do this. Push adderss of the return address of end if on the stack
 else2:  i2i r_1         => r_3
         sub r_2, r_1    => r_1
         i2i r_3         => r_2
         push r_return_if
         jumpI           -> gcd
 
+// increment count, and jump to the next return address
 endIf:  addI r_count, 1 => r_count
         pop             => r_ret
         jump           -> r_ret
 
-
+// output result
 end:    out "Greatest Common Divisor: ", r_result
         out "Call count: ", r_count

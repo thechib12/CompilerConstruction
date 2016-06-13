@@ -1,0 +1,18 @@
+digraph G {
+    0 [penwidth=3,label="0_loadI",color=1, colorscheme=paired12] 
+    1 [penwidth=3,label="1_pop",color=1, colorscheme=paired12] 
+    2 [penwidth=3,label="2_add",color=1, colorscheme=paired12] 
+    3 [penwidth=3,label="3_sub",color=1, colorscheme=paired12] 
+    4 [penwidth=3,label="4_store",color=1, colorscheme=paired12] 
+    5 [penwidth=3,label="5_add",color=1, colorscheme=paired12] 
+    6 [penwidth=3,label="6_END",color=1, colorscheme=paired12] 
+
+    2->0 [penwidth=2] 
+    2->1 [penwidth=2] 
+    3->1 [penwidth=2] 
+    3->2 [penwidth=2] 
+    4->2 [penwidth=2] 
+    5->1 [penwidth=2] 
+    5->2 [penwidth=2] 
+    6->4 [penwidth=2] 
+}
